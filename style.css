@@ -1,21 +1,32 @@
+/* Horror color palette
+   Near Black:     #0D0D12
+   Charcoal:       #191820
+   Dark Burgundy:  #4A1026
+   Blood Red:      #8B1E3F
+   Dusty Rose:     #C56A7A
+   Off White:      #F2E9EC
+*/
+
+
 body {
-  background-color:Thistle;
+  background-color:#191820;
   min-width: 611px;
   display:grid;
   grid-template-columns:1fr;
   gap:1.5rem;
+  color: #F2E9EC;
   
 }
 
 header, nav, footer {
   grid-column: 1/2;
-  color: white
+  color: #F2E9EC;
 }
 
 header {
-  background-color: Purple;
+  background-color:#4A1026;
   text-align:center;
-  color: white;
+  color:#F2E9EC;
   padding: 2rem;
 }
 
@@ -28,16 +39,16 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    background-color: black;
+    background-color: #0D0D12;
     padding: 1rem 2rem;
-    color: white;
+    color: #F2E9EC;
     font-size: 1rem;
     text-transform: uppercase;
 }
   
 nav a:hover {
-    background-color: white;
-    color:gray;
+    background-color:#8B1E3F;
+    color:#F2E9EC;
 }
 
 
@@ -47,9 +58,10 @@ main {
 }
 
 main > section {
-  background-color: white;
+  background-color: #191820;
+   color: #F2E9EC;
   padding: 1.5rem;
-  border: 2px solid purple;
+  border: 2px solid #8B1E3F;
 }
 
 
@@ -58,16 +70,26 @@ main > section {
   display: flex;
   gap:1rem;
   flex-wrap:wrap;
-  background-color: purple;
+  background-color: #4A1026;
   padding:1rem;
 }
 
 .card-row > section,
 .card-row > figure {
   flex: 1 1 260px;
-  background-color: Thistle;
+  background-color: #191820;
+  color: #F2E9EC;
+  border: 2px solid #8B1E3F;
   margin: .5rem;
   padding: .5rem;
+}
+
+main a {
+  color: #C56A7A;
+}
+
+main a:hover {
+  color: #F2E9EC;
 }
 
 
