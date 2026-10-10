@@ -1,0 +1,73 @@
+body {
+  background-color:Thistle;
+  min-width: 611px;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.5rem;
+  
+}
+
+header, nav, footer {
+  grid-column: 1/2;
+  color: white
+}
+
+header {
+  background-color: Purple;
+  text-align:center;
+  color: white;
+  padding: 2rem;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content:space-evenly;
+  list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+  
+nav a:hover {
+    background-color: white;
+    color:gray;
+}
+
+
+main {
+  display: grid;
+  gap: 2rem;
+}
+
+main > section {
+  background-color: white;
+  padding: 1.5rem;
+  border: 2px solid purple;
+}
+
+
+
+.card-row {
+  display: flex;
+  gap:1rem;
+  flex-wrap:wrap;
+  background-color: purple;
+  padding:1rem;
+}
+
+.card-row > section,
+.card-row > figure {
+  flex: 1 1 260px;
+  background-color: Thistle;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+
